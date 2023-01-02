@@ -20,13 +20,13 @@ Setting up development environment to create a mod using JotunnLib and Visual st
 4. Using the `NuGet Packge Manager`, download and install `HarmonyX` as a dependency.
 
 ## Creating your mod
-To use JotunnLib, you must add it as a BepInEx dependency. If possible, please use our `JotunnLib.JotunnLib.ModGuid` variable to reference our mod, to prevent against any issues if this changes in the future.
+To use JotunnLib, you must add it as a BepInEx dependency. If possible, please use our `Jotunn.Main.ModGuid` variable to reference our mod, to prevent against any issues if this changes in the future.
 
 ```cs
 namespace TestMod
 {
     [BepInPlugin("com.bepinex.plugins.testmod", "JotunnLib Test Mod", "0.0.1")]
-    [BepInDependency(JotunnLib.JotunnLib.ModGuid)]
+    [BepInDependency(Jotunn.Main.ModGuid)]
     public class TestMod : BaseUnityPlugin
     {
         // ...
